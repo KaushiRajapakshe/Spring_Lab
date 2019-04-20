@@ -1,5 +1,7 @@
 package com.example.demo.domain;
 
+import java.util.Date;
+
 import javax.validation.constraints.NotEmpty;
 import javax.xml.crypto.Data;
 
@@ -55,8 +57,8 @@ public Data getCreatedAt() {
 	return createdAt;
 }
 
-public void setCreatedAt(Data createdAt) {
-	this.createdAt = createdAt;
+public void setCreatedAt(Date date) {
+	this.createdAt = (Data) date;
 }
 
 public Data getUpdatedAt() {
