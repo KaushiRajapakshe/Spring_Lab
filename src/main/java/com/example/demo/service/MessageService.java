@@ -5,12 +5,14 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.demo.domain.Message;
 import com.example.demo.repository.MessageRepository;
+import com.google.common.base.Optional;
 
 
 @Service
@@ -40,6 +42,10 @@ public class MessageService {
 	}
 	
 	public List<Message> findAllMessage(Message message){
+		return null;
+	}
+	
+	public Optional<Message> findMessage(String id) {
 		return null;
 	}
 }
